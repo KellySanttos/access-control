@@ -5,6 +5,9 @@ public class AccessControl {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Digite a sua idade: ");
+        int age = scanner.nextInt();
+
     }
     public static int Multiply(int numberOne, int numberTwo) {
         return numberOne * numberTwo;
