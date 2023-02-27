@@ -8,7 +8,10 @@ public class AccessControl {
         System.out.print("Digite a sua idade: ");
         int age = scanner.nextInt();
 
-        if () {
+        String authorized = "Usuário autorizado!";
+        String denied = "Usuário não autorizado!"
+
+        if (age => 18) {
 
         } else {
 
