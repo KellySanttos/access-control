@@ -8,12 +8,12 @@ public class AccessControl {
         System.out.print("Digite a sua idade: ");
         int age = scanner.nextInt();
 
-        String authorized = "Usuário autorizado!";
-        String denied = "Usuário não autorizado!";
+        String authorized = "USUÁRIO AUTORIZADO!";
+        String denied = "USUÁRIO NEGADO!";
 
         if (age >= 18) {
             System.out.println(authorized);
-            System.out.println("-----------------------------");
+            System.out.println("--------------------------------");
 
             System.out.print("Digite o primeiro número: ");
             int numberOne = scanner.nextInt();
@@ -26,10 +26,10 @@ public class AccessControl {
 
             System.out.println("Resultado da multiplicação: ".concat(String.valueOf(result)));
 
-        } else {
+            scanner.close();
 
-        }
-
+        } else
+            System.out.println(denied);
     }
     public static int Multiply(int numberOne, int numberTwo) {
         return numberOne * numberTwo;
