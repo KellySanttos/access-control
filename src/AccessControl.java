@@ -9,9 +9,22 @@ public class AccessControl {
         int age = scanner.nextInt();
 
         String authorized = "Usuário autorizado!";
-        String denied = "Usuário não autorizado!"
+        String denied = "Usuário não autorizado!";
 
-        if (age => 18) {
+        if (age >= 18) {
+            System.out.println(authorized);
+            System.out.println("-----------------------------");
+
+            System.out.print("Digite o primeiro número: ");
+            int numberOne = scanner.nextInt();
+
+            System.out.print("Digite o segundo número: ");
+            int numberTwo = scanner.nextInt();
+
+            int result = Multiply(numberOne, numberTwo);
+            System.out.println("--------------------------------");
+
+            System.out.println("Resultado da multiplicação: ".concat(String.valueOf(result)));
 
         } else {
 
