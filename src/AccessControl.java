@@ -21,7 +21,7 @@ public class AccessControl {
             System.out.print("Digite o segundo número: ");
             int numberTwo = scanner.nextInt();
 
-            int result = Multiply(numberOne, numberTwo);
+            int result = multiply(numberOne, numberTwo);
             System.out.println("--------------------------------");
 
             System.out.println("Resultado da multiplicação: ".concat(String.valueOf(result)));
@@ -31,7 +31,7 @@ public class AccessControl {
         } else
             System.out.println(denied);
     }
-    public static int Multiply(int numberOne, int numberTwo) {
+    public static int multiply(int numberOne, int numberTwo) {
         return numberOne * numberTwo;
     }
 }
